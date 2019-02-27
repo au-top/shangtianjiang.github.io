@@ -1,0 +1,168 @@
+@media screen and (min-width: 735px) and (max-width:1000px) {
+    .header{
+         width: 720px;
+        color: #fff;
+     }
+    .zanlan{
+        width:720px;
+    }
+    .luenbotu_box_k{
+        width: 720px;
+    }
+    .footer_window_main{
+        width: 720px;
+    }
+  .main{
+      width:720px;
+  }
+    .zhanlan_s_longlong>div{
+        display: none;
+    }
+    .zhanlan_color_width_height{
+
+    }
+    .cpp_back{
+        background-image: url(img/no1.png);
+        background-size: 100% 100%;
+    }
+    .py_back{
+        background-image: url(img/no2.png);
+        background-size: 100% 100%;
+    }
+    .zhanlan_color_000{
+        background-color:rgba(98,98,98,0.4);
+        box-shadow: 0 0 3px rgba(154, 149, 140, 0.54);
+    }
+    .zhanlan_color_orange{
+        float: right!important;
+        background-color:rgba(231, 171, 40,0.4);
+        box-shadow: 0 0 3px orange;
+    }
+    .zhanlan_color_fff{
+        background-color: rgba(255,255,255,0.6);
+    }
+    .cpp_back,.py_back{
+        float: left;
+    }
+    .zhanlan_img_no1,.zhanlan_img_no2{
+        display: none;
+    }
+    .zhanlan_color_width_height{
+        margin: 0 0;
+    }
+    .footer_window_main_logo{
+        float: none!important;
+        margin: 0 auto;
+    }
+    .luenbotu_box_k_main_button{
+        margin-top: 5px;
+        width: 100%;
+    }
+    .luenbotu_box_k_main{
+        padding: 10px 20px;
+    }
+    .footer_window_main>div{
+        float: none;
+        margin: 0 auto;
+    }
+}
+@media screen  and (max-width:735px){
+    .header{
+        width: 100%;
+        color: #fff;
+    }
+    .footer_window_main_url_all{
+        width: 100%;
+    }
+    .zhanlan_color_width_height{
+        width: 100%;
+    }
+    .zanlan{
+        width: 100%;
+    }
+    .luenbotu_box_k{
+        width: 100%;
+    }
+    .footer_window_main{
+        width: 100%;
+    }
+    .luenbotu_text_font_xiaode{
+        width: 100%;
+    }
+
+    .main{
+        width: 100%;
+    }
+    .zhanlan_s_longlong>div{
+        display: none;
+    }
+    .zhanlan_color_width_height{
+
+    }
+    .cpp_back{
+        background-image: url(img/no1.png);
+        background-size: 100% 100%;
+    }
+    .py_back{
+        background-image: url(img/no2.png);
+        background-size: 100% 100%;
+    }
+    .zhanlan_color_000{
+        background-color:rgba(98,98,98,0.4);
+        box-shadow: 0 0 3px rgba(154, 149, 140, 0.54);
+    }
+    .zhanlan_color_orange{
+        float: none!important;
+        background-color:rgba(231, 171, 40,0.4);
+        box-shadow: 0 0 3px orange;
+    }
+    .zhanlan_color_fff{
+        width: 100%;
+        background-color: rgba(255,255,255,0.6);
+        position:static;
+    }
+
+    .cpp_back,.py_back{
+        float: left;
+    }
+    .zhanlan_img_no1,.zhanlan_img_no2{
+        display: none;
+    }
+    .zhanlan_color_width_height{
+        margin: 0 0;
+    }
+    .footer_window_main_logo{
+        float: none!important;
+        margin: 0 auto;
+    }
+    .luenbotu_box_k_main_button{
+        margin-top: 5px;
+        width: 100%;
+    }
+    .luenbotu_box_k_main{
+        padding: 10px 20px;
+    }
+    .footer_window_main>div{
+        float: none;
+        margin: 0 auto;
+    }
+    .zhanlan_color_no2{
+    }
+    .luenbotu_box_k_main>div>form>div{
+        margin-top: 5px;
+    }
+    .luenbotu_box_k_main>div>form>div{
+        float: none;
+        width: 150px;
+    }
+    .luenbotu_box_k_main_width{
+        height: 17px!important;
+    }
+    .footer_window_main_url_all>div{
+        float: left;
+    }
+
+    .footer_window_main_url_data{
+        width: 20%;
+    }
+}
