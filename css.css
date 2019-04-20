@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#Game_box{
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+    height: 660px;
+    box-shadow: 0 0 3px snow;
+}
+#Game_play{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    overflow: hidden;
+    animation:  GamePlay 3s forwards;
+}
+.color_fff{
+    color: white;
+}
+.but{
+    border: none;
+    padding: 2px 3px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+.but_fff{
+    background-color: deepskyblue;
+    color: white;
+}
+@keyframes GamePlay {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+#fuel_box{
+    border-radius:5px;
+    overflow: hidden;
+    box-shadow: 0 0 3px #0016dc;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: #004881;
+}
+#fuel{
+    transition: all 300ms;
+    height: 100%;
+    width: 0%;
+    background-color: #0088ff;
+}
+#fuel_num{
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+}
+#Fraction_box{
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    color: white;
+}
+.Bullet_Class{
+    width: 20px;
+    height: 5px;
+    background-color: rgba(0, 213, 255, 0.56);
+    position: absolute;
+    box-shadow: 0 0 3px skyblue;
+}
+.Eny_Class{
+    filter:drop-shadow(3px  3px  3px rgba(133, 130, 130, 0.75));
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+.fuel_Class{
+    position: absolute;
+    width: 16px;
+    height: 24px;
+}
+.Boxtips{
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    border-radius: 15px;
+    text-align: center;
+    padding: 1px;
+}
+.red{
+    background-color: rgba(244, 18, 0, 0.59);
+    box-shadow: 0 0 3px red;
+    color: white;
+    text-shadow: 0 0 3px snow;
+}
+.green{
+    background-color: rgba(59, 222, 0, 0.59);
+    box-shadow: 0 0 3px rgba(148, 255, 139, 0.32);
+    color: white;
+    text-shadow: 0 0 3px snow;
+}
+.blue{
+    background-color: rgba(0, 136, 255, 0.93);
+    box-shadow: 0 0 3px 1px #0044ee;
+    color: white;
+    text-shadow: 0 0 3px snow;
+}
+#Game_Filter{
+    opacity: 0;
+    transition: opacity 200ms;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(255, 0, 42, 0)60%, rgba(255, 0, 24, 0.33),rgba(255, 0, 24, 0.62)); /* 标准的语法 */
+    z-index: 1;
+}
+#Game_info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+}
+#Game_box{
+    background: url("images/background-1.jpg");
+}
+.Planet{
+    left: 100%;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-name:Planet;
+
+}
+.Planet1{
+    top: 10px;
+    width: 80px;
+    height: 80px;
+    background-size: 100% 100%;
+    animation-duration:55s;
+    filter: grayscale(80%);
+}
+.Planet2{
+    top: 100px;
+    width: 150px;
+    height: 150px;
+    background-size: 100% 100%;
+    animation-duration:45s;
+    filter: grayscale(70%);
+
+}
+.Planet3{
+    top: 250px;
+    width: 200px;
+    height: 200px;
+    background-size: 100% 100%;
+    animation-duration:35s;
+    filter: grayscale(60%);
+}
+.Planet4{
+    top: 450px;
+    width: 450px;
+    height: 450px;
+    background-size: 100% 100%;
+    animation-duration:20s;
+    filter: grayscale(50%);
+}
+.aestroid{
+    background-size: 100% 100%;
+    animation:aestroid 8s forwards ;
+}
+@keyframes aestroid {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes Planet {
+    0%{
+        left: 120%;
+    }
+    100%{
+        left: -100%;
+    }
+}
