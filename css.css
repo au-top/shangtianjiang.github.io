@@ -145,7 +145,7 @@ body{
     position: absolute;
     animation-iteration-count: infinite;
     animation-name:Planet;
-
+    filter: contrast(30%);
 }
 .Planet1{
     top: 10px;
