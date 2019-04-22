@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Game{
+    width: 900px;
+    height: 660px;
+    box-shadow: 0 0 3px snow;
+    position: relative;
+    overflow: hidden;
+    background-image: url("images/background-1.jpg");
+}
+#GamePlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    animation:GamePlayText 3s forwards;
+}
+#GameTextBox{
+    color: white;
+    filter: contrast(20);
+}
+#GameText{
+    color: white;
+    animation: GameText 3s forwards;
+    display: block;
+    overflow: hidden;
+}
+@keyframes GamePlayText {
+    0%{
+        height: 0%;
+
+    }
+    100%{
+        height: 100%;
+    }
+}@keyframes GameText {
+     0% {
+         border-right: 1px solid snow;
+         letter-spacing: 1em;
+         filter: blur(5px);
+         color: #fff;
+         width: 0%;
+     }
+     100% {
+         border-right: 0px solid snow;
+         width: 80%;
+         filter: blur(0);
+         color: #fff;
+     }
+ }
+ .but{
+     width: 80%;
+     display: block;
+     margin: 0 auto;
+     padding: 3px;
+     border: none;
+ }
+ .BuleBut{
+     background: #007eeb;
+     color: #fff;
+ }
+ #GameInfo{
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 2;
+ }
+ #GameRed{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     z-index: 1;
+     background: radial-gradient(#00000000 75%,rgba(184, 0, 0, 0.7));
+     opacity: 0;
+ }
+
+/*
+GAME Function
+ */
+#GameFunction{
+    margin: 10px;
+}
+#Fuel_box{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    box-shadow: 0 0 3px snow;
+    text-align: center;
+}
+#Fuel{
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    color: white;
+}
+#Fuel_main{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #53ffa0;
+}
+#FractionBox{
+
+    color: white;
+}
+ /*
+ GAME
+ */
+.poab{
+    position: absolute;
+}
+.Eny_Class{
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0 0 5px rgb(184, 184, 184));
+}
+.Bullet_Class{
+    width: 20px;
+    height: 10px;
+    background-color: #0088ff;
+    box-shadow: 0 0 3px #0072eb;
+}
+.Fuel_Class{
+    width: 16px;
+    height: 24px;
+    background-image:url("images/ran.png");
+    background-size: 100% 100%;
+}
+.Stone_Class{
+    width: 80px;
+    height: 80px;
+    background-size: 100% 100%;
+    filter: drop-shadow(3px 3px 3px rgb(166, 166, 166));
+}
+
+.deg{
+    animation: deg 3s linear infinite;
+}
+@keyframes deg {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

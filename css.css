@@ -153,7 +153,7 @@ body{
     height: 80px;
     background-size: 100% 100%;
     animation-duration:55s;
-    filter: grayscale(80%);
+    filter: brightness(30%);
 }
 .Planet2{
     top: 100px;
@@ -161,7 +161,7 @@ body{
     height: 150px;
     background-size: 100% 100%;
     animation-duration:45s;
-    filter: grayscale(70%);
+    filter: brightness(45%);
 
 }
 .Planet3{
@@ -170,7 +170,7 @@ body{
     height: 200px;
     background-size: 100% 100%;
     animation-duration:35s;
-    filter: grayscale(60%);
+    filter: brightness(55%);
 }
 .Planet4{
     top: 450px;
@@ -178,7 +178,7 @@ body{
     height: 450px;
     background-size: 100% 100%;
     animation-duration:20s;
-    filter: grayscale(50%);
+    filter: brightness(65%);
 }
 .aestroid{
     background-size: 100% 100%;
