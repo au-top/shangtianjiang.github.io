@@ -1,19 +1,18 @@
 function GameGo() {
     $('#GoPlayBut').attr('onclick', '');
+    $('#GameFunction').css('display','block');
     let GamePlay = $('#GamePlay');
     GamePlay.animate({width: '0px'}, function () {
         GamePlay.css('display', 'none');
-
         GAME();
     });
 }
-
 function GAME() {
     let GameObj = $('#Game');
     let GameW = GameObj.width();
     let GameH = GameObj.height();
     let EnyModel1 = "<div class=\"poab Eny_Class\" style=\"background-image: url('images/ship_1.png')\"></div>";
-    let PlayerModel = "<div class=\"poab Eny_Class\" style=\"background-image: url('images/Player.png')\"></div>";
+    let PlayerModel = "<div class=\"poab PlayA Eny_Class\" style=\"background-image: url('images/Player.png')\"></div>";
     let BulletModel1 = "<div class=\"poab Bullet_Class\"></div>";
     let FuelModel1 = "<div class=\"deg poab Fuel_Class\"></div>";
     let YouModel1 = "<div class=\"poab Eny_Class\" style=\"background-image: url('images/you.png')\"></div>";
@@ -94,7 +93,6 @@ function GAME() {
         this.speed = _speed;
         init.call(this, _x, _y, _GIFMAX);
     }
-
     function NewBullet(_x, _y, _model, _speed, _party) {
         this.model = $(_model);
         this.speed = _speed;
@@ -104,7 +102,6 @@ function GAME() {
         BulArray.push(this);
         init.call(this, _x, _y, 0);
     }
-
     let PlayerLeft = 0, PlayerRight = 0, PlayerTop = 0, PlayerBottom = 0;
     $(' html').keydown(function (e) {
         switch (e.keyCode) {

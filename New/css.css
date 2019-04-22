@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: black;
+    background: url("images/back2.png");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,24 +91,28 @@ body{
 GAME Function
  */
 #GameFunction{
+    display: none;
     margin: 10px;
 }
 #Fuel_box{
     position: relative;
+    border-radius:5px;
+    overflow: hidden hidden;
     width: 200px;
-    height: 40px;
+    height: 20px;
     box-shadow: 0 0 3px snow;
     text-align: center;
 }
 #Fuel{
     position: absolute;
     z-index: 10;
-    top: 10px;
+    top: 0px;
     color: white;
 }
 #Fuel_main{
     position: absolute;
     height: 100%;
+    transition: all 300ms;
     width: 0%;
     background-color: #53ffa0;
 }
@@ -121,6 +125,9 @@ GAME Function
  */
 .poab{
     position: absolute;
+}
+.PlayA{
+    animation:Player 1s;
 }
 .Eny_Class{
     width: 80px;
@@ -148,6 +155,15 @@ GAME Function
 
 .deg{
     animation: deg 3s linear infinite;
+}
+@keyframes Player {
+    0%{
+        left: -100px;
+    }
+    100%{
+        left: 50px;
+    }
+
 }
 @keyframes deg {
     0%{
