@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div id="Game">
+    <div id="GameRed"></div>
+    <div id="GameInfo">
+        <div id="GamePlay">
+            <div>
+                <ul id="GamePlayText">
+                    <li>How to Play Star Battle.</li>
+                    <li>1. Move the spaceship using the sensible areas in the screen;</li>
+                    <li>2. The timer present the time lapsed;</li>
+                    <li>3. The fuel counter show the remain fuel;</li>
+                    <li>4. During the flight, the spaceship needs to</li>
+                    <li>destroy the asteroids and enemy spaceships that are presented in the space;</li>
+                    <li>5. You can shoot pressing Space Bar;</li>
+                    <li>6. If the spaceship hits a asteroid or another spaceship, you lose 15 points of fuel;</li>
+                    <li>7. Enemy spaceship needs 1 shot to be destroyed, you will get 5 points for each enemy
+                        destroyed;
+                    </li>
+                    <li>8. Asteroid needs 2 shots to be destroyed, you will get 10 points for each asteroid destroyed;
+                    </li>
+                    <li>9. If you destroy a friendly spaceship, you lose 10 points;</li>
+                    <li>10. During the flight, the spaceship needs to collect fuel in the space;</li>
+                    <li>11. You can pause the game clicking in a button pause, or pressing the letter "p";</li>
+                    <li>12. Go beyond all limits;</li>
+                    <li>Battle in Space with Star Battle Championship...</li>
+                </ul>
+                    <label>
+                        <input id="PlayerName" class="input" type="text" placeholder="Name">
+                    </label>
+                    <button class="but butred" onclick="PlayGame()"> PlayNewGame</button>
+                    <button class="but butblue"> ReadingGame</button>
+            </div>
+        </div>
+        <div id="GameFunction"></div>
+        <div id="GameOver"></div>
+    </div>
+</div>
+</body>
+<script src="ajax.js"></script>
+<script src="function.js"></script>
+<script src="js.js"></script>
+</html>

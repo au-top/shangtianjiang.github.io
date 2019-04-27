@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="jquery-3.2.1.min.js"></script>
+<body>
+
+</body>
+<script>
+    let id;
+    let fraction=0;
+    let fuel=15;
+    $.ajax({
+        url:'php.php',
+        type:'post',
+        data:{
+            type:0,
+            Name:'QWEASD'
+        },
+        success:function (data) {
+            data=eval(data);
+            console.log(data);
+            id=data[0]['id'];
+            fuel=data[0]['fuel'];
+            fraction=data[0]['id'];
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Game {
+    width: 960px;
+    height: 600px;
+    box-shadow: 0 0 3px snow;
+    position: relative;
+}
+
+#GameRed {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#00000000 80%, red);
+}
+
+#GameInfo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#GamePlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#GamePlayText {
+    list-style-type: none;
+    color: white;
+}
+#GamePlayText span{
+    opacity: 0;
+    position: relative;
+}
+#GamePlayText > li {
+
+
+    display: block;
+    white-space:nowrap;
+    overflow: hidden hidden;
+    font-size: 15px;
+    margin: 3px;
+    word-wrap: break-word
+}
+
+.but {
+    width: 100%;
+    padding: 5px;
+    margin: 3px;
+}
+
+.butred {
+    background-color: red;
+    box-shadow: 0 0 3px red;
+    color: white;
+    border: none;
+}
+
+.butblue {
+    background-color: #008cff;
+    box-shadow: 0 0 3px #008cff;
+    color: white;
+    border: none;
+}
+.input{
+    width: 100%;
+    border: none;
+    padding: 3px;
+
+}
+#GamePlayText{
+    animation: GamePlay 3s ;
+    overflow:hidden hidden;
+}
+
+#GamePlayText>li{
+    position: relative;
+}
+.MeiHua{
+    filter: drop-shadow(2px 2px 3px seashell);
+}
+.EnyClass{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+.BulletClass{
+    position: absolute;
+    background-image: url("images/Bullet.png");
+    width: 30px;
+    height: 10px;
+}
