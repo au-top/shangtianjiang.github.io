@@ -13,10 +13,11 @@ function GOPLAY() {
         console.log(TextArray);
         for (let id=0;id<TextArray.length;id++){
             $(TextArray[id]).css(id%4<2?'top':'left',id%2?`100px`:`-100px`);
-            $(TextArray[id]).animate({'left': 0, 'top': 0, 'opacity': 1}, i*200+id * 100 + 500);
+            $(TextArray[id]).animate({'left': 0, 'top': 0, 'opacity': 1}, i*200+id * 50 + 1000);
         }
         // $(lenght[i]).animate({'left': 0, 'top': 0, 'width': `100%`, 'opacity': 1}, i * 150 + 1000);
     }
+    $('#GamePlayText').css('opacity','1');
 }
 GOPLAY();
 function HiddandGame() {
