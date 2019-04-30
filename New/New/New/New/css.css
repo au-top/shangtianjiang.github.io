@@ -34,13 +34,6 @@ body{
     color: white;
     overflow-y: hidden;
 }
-#GaneBack{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 #GameUl>li{
     position: relative;
     opacity: 0;

@@ -8,5 +8,5 @@ function GameInit() {
 }
 GameInit();
 function GamePlay() {
-    $('#GaneBack').animate({height:`0%`},300);
+    $('#GamePlay').animate({width:`0%`},300);
 }
