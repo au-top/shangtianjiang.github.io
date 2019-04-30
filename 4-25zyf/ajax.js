@@ -4,6 +4,9 @@ let id;
 function PlayGame() {
     let name=$('#PlayerName').val();
     console.log(name);
+    $('#ButDiv').animate({height:`0px`},500,function () {
+       $('#ButDiv').css('display','none');
+    });
     $.ajax({
         type:'post',
         data:{
@@ -20,7 +23,4 @@ function PlayGame() {
     })
 }
 function PlayDataUpdate() {
-
-
-
 }

@@ -2,6 +2,8 @@ let EnyArray=[];
 let SetArray=[];
 let BulletArray=[];
 let FallArray=[];
+let PlayerArray=[];
+let FuelArray=[];
 let GIFSTOP=1;
 
 /**
@@ -29,8 +31,10 @@ function Boom(obja,objb) {
         objab>objb.y&&
         obja.y<objbb
 }
+
 function Fall(obj) {
     FallArray.push(obj);
+    obj.Array=FallArray;
     obj.speed=5;
     clearInterval(obj.GIFSet);
     obj.Model.css('transform','rotate(-50deg)');

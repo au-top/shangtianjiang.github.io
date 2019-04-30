@@ -23,8 +23,7 @@
                     <li>destroy the asteroids and enemy spaceships that are presented in the space;</li>
                     <li>5. You can shoot pressing Space Bar;</li>
                     <li>6. If the spaceship hits a asteroid or another spaceship, you lose 15 points of fuel;</li>
-                    <li>7. Enemy spaceship needs 1 shot to be destroyed, you will get 5 points for each enemy
-                        destroyed;
+                    <li>7. Enemy spaceship needs 1 shot to be destroyed, you will get 5 points for each enemy destroyed;
                     </li>
                     <li>8. Asteroid needs 2 shots to be destroyed, you will get 10 points for each asteroid destroyed;
                     </li>
@@ -34,16 +33,23 @@
                     <li>12. Go beyond all limits;</li>
                     <li>Battle in Space with Star Battle Championship...</li>
                 </ul>
+                <div id="ButDiv">
                     <label>
                         <input id="PlayerName" class="input" type="text" placeholder="Name">
                     </label>
                     <button class="but butred" onclick="PlayGame()"> PlayNewGame</button>
                     <button class="but butblue"> ReadingGame</button>
+                </div>
             </div>
         </div>
-        <div id="GameFunction"></div>
+        <div id="GameFunction">
+            <div class="FuelBox">
+                <div class="FuelMain"></div>
+            </div>
+        </div>
         <div id="GameOver"></div>
     </div>
+
 </div>
 </body>
 <script src="ajax.js"></script>
