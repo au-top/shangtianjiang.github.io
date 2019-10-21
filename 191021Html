@@ -1,0 +1,4 @@
+  <div class="ImgFileList">
+            <span>ImgFile: </span>
+            <input name="ImgFile" type="file">
+        </div>
