@@ -1,0 +1,10 @@
+public function addImg($fimg=null){
+        $s='';
+        $imgdir='./File/';
+        if ($fimg!=null ){
+            $url=$imgdir.time().rand(1,100).'.png';
+            move_uploaded_file($fimg['tmp_name'],$url);
+            $s='<img src="'.$url.'" "/>';
+        }
+        return $s;
+    }
