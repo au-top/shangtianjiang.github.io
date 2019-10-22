@@ -1,0 +1,31 @@
+class AddSubject
+{
+    public function view(){
+        $d=mysql_q('select * from `class`');
+        $td=mysql_q('SELECT * FROM `subject` ORDER BY id DESC LIMIT 0,1');
+        require "./view/addSubject.php";
+    }
+    public function addS(){
+        $sd=(string)$_POST['SubjectData'];
+        $an=(string)$_POST['Answer'];
+        $type=(int)$_POST['type'];
+        $sd.=$this->addImg($_FILES['ImgFile']);
+        mysql_qi('INSERT INTO `subject` VALUES (0,\''.$sd.'\',\''.$an.'\',0,'.$type.'); ');
+        redirect('AddSubject','view');
+    }
+    public function addT(){
+        $d=$_GET['data'];
+        mysql_qi('INSERT INTO `class` VALUES (0,\''.$d.'\'); ');
+        redirect('AddSubject','view');
+    }
+    public function addImg($fimg=null){
+	            $s='';
+		            $imgdir='./File/';
+		            if ($fimg!=null ){
+				                $url=$imgdir.time().rand(1,100).'.png';
+						            move_uploaded_file($fimg['tmp_name'],$url);
+						            $s='<img src="'.$url.'" "/>';
+							            }
+			            return $s;
+			        }
+}
