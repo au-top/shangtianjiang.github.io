@@ -1,3 +1,4 @@
+<?php
 class AddSubject
 {
     public function view(){
@@ -29,3 +30,4 @@ class AddSubject
 			            return $s;
 			        }
 }
+?>
